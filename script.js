@@ -29,3 +29,18 @@ p.textContent = 'ME TOO!';
 div.appendChild(h1);
 div.appendChild(p);
 container.appendChild(div);
+
+// Adding onclick event with a single property
+const btn1 = document.querySelector('#btn1');
+btn1.onclick = () => alert('Hello World');
+
+// Adding onclick event which allows for multiple event listeners
+const btn2 = document.querySelector('#btn2');
+btn2.addEventListener('click', () => {
+    alert("Hello World");
+});
+
+// Function for onclick event listener
+function alertFunction() {
+    alert('YAY! YOU DID IT!');
+}
